@@ -37,14 +37,14 @@ hash2.update('Message2 to hash');
 hash2.array();
 
 // HMAC
-sha256.hmac('key', 'Message to hash');
-sha224.hmac('key', 'Message to hash');
+sha256Hmac('key', 'Message to hash');
+sha224Hmac('key', 'Message to hash');
 
-var hash = sha256.hmac.create('key');
+var hash = sha256Hmac.create('key');
 hash.update('Message to hash');
 hash.hex();
 
-var hash2 = sha256.hmac.update('key', 'Message to hash');
+var hash2 = sha256Hmac.update('key', 'Message to hash');
 hash2.update('Message2 to hash');
 hash2.array();
 ```
